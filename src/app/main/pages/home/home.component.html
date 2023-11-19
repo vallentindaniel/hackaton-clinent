@@ -1,0 +1,27 @@
+
+<div class="row gy-2 d-flex justify-content-center align-items-center">
+    <div *ngFor="let post of postsList" class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card shadow-sm"><img class="card-img-top w-100 d-block" [src]="images" />
+            <div class="card-body">
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-primary m-auto position-relative" type="button">
+                        <i class="far fa-heart" style="font-size: 17px;"></i>
+                        <mat-icon>verified_user</mat-icon>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">30k+</span>
+                    </button>
+                    <button class="btn btn-primary m-auto position-relative" type="button">
+                        <mat-icon>comment</mat-icon>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">300+</span>
+                    </button>
+                    <button class="btn btn-primary m-auto" type="button">
+                        <mat-icon>bookmark</mat-icon>
+                    </button>
+                    </div>
+                <p class="text-truncate card-text">{{post.title}}-{{post.text}}</p>
+                <p class="text-truncate card-text">@andrey  Felicitary</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
